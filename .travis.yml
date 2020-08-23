@@ -1,3 +1,4 @@
+# this file will be used by travis to build image and push the image to hub.docker.com
 sudo: required
 service:
  - docker
