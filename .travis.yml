@@ -2,12 +2,12 @@
 sudo: required
 service:
  - docker
-before_install:# this is image creation for travis from docker file 
+before_install:#  image creation form docker file 
   - docker build -t kkaruna9/travis:v3.0 .
 script:
  - echo "$docker_password" | docker login -u "$docker_username" --password-stdin
  - docker images # to verify image is build or not
- - docker push kkaruna9/travis:v3.0 # i am pushing my image to hub.docker.com reposiorty
+ - docker push kkaruna9/travis:v3.0 #  pushing image to hub.docker.com reposiorty
 notifications:
  email:
    recipients:
