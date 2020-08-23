@@ -1,4 +1,4 @@
-# this file will be used by travis to build image and push the image to hub.docker.com
+# this file will be used by travis to build image and push the image to hub.docker.com.However there is 2 things also will be automated as part of thi excercise.1. whenevr there is change in the code (dockerfile the trigger will be initated.2. if there is any issue in the build automatically the final image wont be pushed.
 sudo: required
 service:
  - docker
